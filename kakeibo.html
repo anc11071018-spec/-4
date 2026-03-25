@@ -1,0 +1,227 @@
+{\rtf1\ansi\ansicpg932\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset128 HiraginoSans-W3;\f2\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="ja">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>
+\f1 \'8a\'c8\'88\'d5\'89\'c6\'8c\'76\'95\'eb\'83\'63\'81\'5b\'83\'8b
+\f0 </title>\
+    <style>\
+        body \{ font-family: sans-serif; margin: 20px; background-color: #f4f7f6; color: #333; \}\
+        .container \{ max-width: 600px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); \}\
+        h2 \{ border-bottom: 2px solid #007bff; padding-bottom: 10px; \}\
+        .form-group \{ margin-bottom: 15px; \}\
+        label \{ display: block; margin-bottom: 5px; font-weight: bold; \}\
+        select, input \{ width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; \}\
+        button \{ background-color: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px; \}\
+        button:hover \{ background-color: #0056b3; \}\
+        table \{ width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px; \}\
+        th, td \{ border: 1px solid #ddd; padding: 8px; text-align: left; \}\
+        th \{ background-color: #f8f9fa; \}\
+        .copy-area \{ margin-top: 20px; background: #e9ecef; padding: 10px; border-radius: 4px; \}\
+        pre \{ white-space: pre-wrap; word-wrap: break-word; font-size: 12px; \}\
+    </style>\
+</head>\
+<body>\
+\
+<div class="container">\
+    <h2>
+\f1 \'89\'c6\'8c\'76\'95\'eb\'83\'66\'81\'5b\'83\'5e\'8d\'ec\'90\'ac
+\f0 </h2>\
+    \
+    <div class="form-group">\
+        <label>
+\f1 \'93\'fa\'95\'74
+\f0 </label>\
+        <input type="date" id="dateInput">\
+    </div>\
+    \
+    <div class="form-group">\
+        <label>
+\f1 \'8d\'80\'96\'da\'96\'bc
+\f0 </label>\
+        <select id="categoryInput">\
+            <option value="
+\f1 \'89\'c6
+\f0 ">
+\f1 \'89\'c6
+\f0 </option>\
+            <option value="Switch2">Switch2</option>\
+            <option value="
+\f1 \'83\'5e\'83\'43\'83\'84
+\f0 ">
+\f1 \'83\'5e\'83\'43\'83\'84
+\f0 </option>\
+            <option value="
+\f1 \'83\'75\'81\'5b\'83\'63
+\f0  
+\f1 \'91\'54\'83\'45\'83\'46\'83\'41
+\f0 ">
+\f1 \'83\'75\'81\'5b\'83\'63
+\f0  
+\f1 \'91\'54\'83\'45\'83\'46\'83\'41
+\f0 </option>\
+            <option value="
+\f1 \'83\'58\'83\'6d\'83\'7b
+\f0 ">
+\f1 \'83\'58\'83\'6d\'83\'7b
+\f0 </option>\
+            <option value="
+\f1 \'83\'6a\'81\'5b\'83\'54
+\f0 ">
+\f1 \'83\'6a\'81\'5b\'83\'54
+\f0 </option>\
+            <option value="
+\f1 \'8e\'d4\'95\'db\'8c\'af
+\f0 ">
+\f1 \'8e\'d4\'95\'db\'8c\'af
+\f0 </option>\
+            <option value="
+\f1 \'8c\'8e\'81\'58\'92\'c7\'89\'c1\'95\'aa
+\f0 ">
+\f1 \'8c\'8e\'81\'58\'92\'c7\'89\'c1\'95\'aa
+\f0 </option>\
+        </select>\
+    </div>\
+\
+    <div class="form-group">\
+        <label>
+\f1 \'8b\'e0\'8a\'7a
+\f0  (
+\f1 \'89\'7e
+\f0 )</label>\
+        <input type="number" id="amountInput" placeholder="
+\f1 \'97\'e1
+\f0 : 5000">\
+    </div>\
+\
+    <button onclick="addData()">
+\f1 \'83\'8a\'83\'58\'83\'67\'82\'c9\'92\'c7\'89\'c1
+\f0 </button>\
+\
+    <table id="dataTable">\
+        <thead>\
+            <tr>\
+                <th>
+\f1 \'93\'fa\'95\'74
+\f0 </th>\
+                <th>
+\f1 \'8d\'80\'96\'da
+\f0 </th>\
+                <th>
+\f1 \'8b\'e0\'8a\'7a
+\f0 </th>\
+            </tr>\
+        </thead>\
+        <tbody></tbody>\
+    </table>\
+\
+    <div class="copy-area">\
+        <label>
+\f1 \'81\'79\'83\'47\'83\'4e\'83\'5a\'83\'8b\'93\'5c\'82\'e8\'95\'74\'82\'af\'97\'70\'81\'69\'83\'5e\'83\'75\'8b\'e6\'90\'d8\'82\'e8\'81\'6a\'81\'7a
+\f0 </label>\
+        <p style="font-size: 11px; color: #666;">
+\f2 \uc0\u8595 
+\f1 \'82\'b1\'82\'b1\'82\'f0\'83\'52\'83\'73\'81\'5b\'82\'b5\'82\'c4\'83\'47\'83\'4e\'83\'5a\'83\'8b\'82\'c9\'93\'5c\'82\'e8\'95\'74\'82\'af\'82\'c4\'82\'ad\'82\'be\'82\'b3\'82\'a2
+\f0 </p>\
+        <pre id="outputArea"></pre>\
+        <button onclick="copyToClipboard()" style="background-color: #28a745;">
+\f1 \'83\'52\'83\'73\'81\'5b\'82\'b7\'82\'e9
+\f0 </button>\
+    </div>\
+</div>\
+\
+<script>\
+    // 
+\f1 \'8f\'89\'8a\'fa\'90\'dd\'92\'e8\'81\'46\'8d\'a1\'93\'fa\'82\'cc\'93\'fa\'95\'74\'82\'f0\'83\'5a\'83\'62\'83\'67
+\f0 \
+    const today = new Date().toISOString().split('T')[0];\
+    document.getElementById('dateInput').value = today;\
+\
+    let dataList = [];\
+\
+    function addData() \{\
+        const date = document.getElementById('dateInput').value;\
+        const category = document.getElementById('categoryInput').value;\
+        const amount = document.getElementById('amountInput').value;\
+\
+        if (!amount) \{\
+            alert("
+\f1 \'8b\'e0\'8a\'7a\'82\'f0\'93\'fc\'97\'cd\'82\'b5\'82\'c4\'82\'ad\'82\'be\'82\'b3\'82\'a2
+\f0 ");\
+            return;\
+        \}\
+\
+        // 
+\f1 \'83\'66\'81\'5b\'83\'5e\'82\'f0\'92\'c7\'89\'c1
+\f0 \
+        const entry = \{ date, category, amount \};\
+        dataList.push(entry);\
+\
+        // 
+\f1 \'83\'65\'81\'5b\'83\'75\'83\'8b\'8d\'58\'90\'56
+\f0 \
+        updateTable();\
+        // 
+\f1 \'8f\'6f\'97\'cd\'83\'65\'83\'4c\'83\'58\'83\'67\'8d\'58\'90\'56
+\f0 \
+        updateOutput();\
+        \
+        // 
+\f1 \'8b\'e0\'8a\'7a\'97\'93\'82\'f0\'83\'4e\'83\'8a\'83\'41
+\f0 \
+        document.getElementById('amountInput').value = "";\
+    \}\
+\
+    function updateTable() \{\
+        const tbody = document.querySelector("#dataTable tbody");\
+        tbody.innerHTML = "";\
+        dataList.forEach(item => \{\
+            const row = `<tr><td>$\{item.date\}</td><td>$\{item.category\}</td><td>$\{item.amount\}</td></tr>`;\
+            tbody.innerHTML += row;\
+        \});\
+    \}\
+\
+    function updateOutput() \{\
+        const output = document.getElementById('outputArea');\
+        // 
+\f1 \'83\'47\'83\'4e\'83\'5a\'83\'8b\'82\'c5\'88\'b5\'82\'a2\'82\'e2\'82\'b7\'82\'a2\'81\'75\'93\'fa\'95\'74
+\f0  
+\f1 \'8d\'80\'96\'da
+\f0  
+\f1 \'8b\'e0\'8a\'7a\'81\'76\'82\'cc\'83\'5e\'83\'75\'8b\'e6\'90\'d8\'82\'e8\'8c\'60\'8e\'ae\'82\'f0\'8d\'ec\'90\'ac
+\f0 \
+        let text = "
+\f1 \'93\'fa\'95\'74
+\f0 \\t
+\f1 \'8d\'80\'96\'da
+\f0 \\t
+\f1 \'8b\'e0\'8a\'7a
+\f0 \\n"; \
+        dataList.forEach(item => \{\
+            text += `$\{item.date\}\\t$\{item.category\}\\t$\{item.amount\}\\n`;\
+        \});\
+        output.textContent = text;\
+    \}\
+\
+    function copyToClipboard() \{\
+        const text = document.getElementById('outputArea').textContent;\
+        navigator.clipboard.writeText(text).then(() => \{\
+            alert("
+\f1 \'83\'52\'83\'73\'81\'5b\'82\'b5\'82\'dc\'82\'b5\'82\'bd\'81\'49\'83\'47\'83\'4e\'83\'5a\'83\'8b\'82\'cc\'83\'5a\'83\'8b\'82\'f0\'91\'49\'91\'f0\'82\'b5\'82\'c4\'93\'5c\'82\'e8\'95\'74\'82\'af\'82\'c4\'82\'ad\'82\'be\'82\'b3\'82\'a2\'81\'42
+\f0 ");\
+        \});\
+    \}\
+</script>\
+\
+</body>\
+</html>\
+}
